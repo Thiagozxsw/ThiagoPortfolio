@@ -1,0 +1,355 @@
+﻿<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfólio profissional de Thiago Correia Capocasali Silveira - Desenvolvedor Full Stack em formação."
+    />
+    <title>Thiago Correia | Portfólio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="cursor" class="cursor" aria-hidden="true"></div>
+    <header class="cabecalho">
+      <nav class="navegacao container" aria-label="Navegação principal">
+        <a class="logo" href="#inicio"><span>Thiago</span> Correia</a>
+        <button
+          id="botao-menu"
+          class="botao-menu"
+          aria-label="Abrir menu"
+          aria-expanded="false"
+        >
+          ☰
+        </button>
+        <div id="menu" class="menu">
+          <a href="#inicio" class="ativo">Início</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#estatisticas">Estatísticas</a>
+          <a href="#habilidades">Tecnologias</a>
+          <a href="#trajetoria">Linha do tempo</a>
+          <a href="#projetos">Projetos</a>
+          <a href="#certificados">Certificados</a>
+          <a href="#contato">Contato</a>
+          <button id="botao-tema" class="botao-tema" aria-label="Alternar tema">
+            🌙
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="inicio" class="hero">
+        <div class="hero-bgs"></div>
+        <div class="container hero-grid reveal">
+          <div class="hero-texto">
+            <span class="hero-badge">Desenvolvedor Full Stack em formação</span>
+            <h1 id="nome-hero">
+              Thiago Correia
+              <span>Capocasali Silveira</span>
+            </h1>
+            <p class="hero-subtitulo">
+              Construindo interfaces modernas, acessíveis e com código limpo.
+            </p>
+            <p id="texto-digitacao" class="hero-typing" aria-live="polite"></p>
+            <div class="hero-acoes">
+              <a href="#projetos" class="botao primario">Ver projetos</a>
+              <button id="download-curriculo" class="botao secundario">Baixar currículo</button>
+              <a href="#contato" class="botao terceiro">Contato</a>
+            </div>
+            <div class="hero-quickstats">
+              <div>
+                <strong>3</strong>
+                <span>Projetos em produção</span>
+              </div>
+              <div>
+                <strong>4</strong>
+                <span>Certificados</span>
+              </div>
+              <div>
+                <strong>1ª</strong>
+                <span>Meta: primeira vaga TI</span>
+              </div>
+            </div>
+          </div>
+          <aside class="hero-card glass">
+            <div class="hero-foto">
+              <img src="img/perfil.png" alt="Foto de perfil de Thiago Correia" />
+            </div>
+            <div class="hero-panel">
+              <h2>Olá, eu sou o Thiago</h2>
+              <p>
+                Estudante de Desenvolvimento de Sistemas com foco em projetos web e soluções completas. Meu objetivo é entregar experiências digitais com performance, usabilidade e visual elegante.
+              </p>
+              <div class="hero-panel-links">
+                <a href="https://github.com/Thiagozxsw/" target="_blank" rel="noopener">GitHub</a>
+                <a href="https://www.linkedin.com/in/thiago-correia-771093326/" target="_blank" rel="noopener">LinkedIn</a>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section id="sobre" class="secao">
+        <div class="container reveal">
+          <div class="titulo-central">
+            <p class="rotulo">PERFIL</p>
+            <h2>Sobre mim</h2>
+            <p class="subtitulo">Perfil profissional, formação e missão de carreira.</p>
+          </div>
+          <div class="sobre-grid">
+            <div class="sobre-card glass">
+              <h3>Sou Thiago, desenvolvedor em formação</h3>
+              <p id="descricao-sobre">
+                Estudante de Desenvolvimento de Sistemas com interesse em desenvolvimento de software e criação de aplicações web. Possuo experiência prática em projetos utilizando HTML, CSS, JavaScript, Node.js, SQLite e integração com APIs, desenvolvendo soluções completas com front-end e back-end.
+              </p>
+              <div class="sobre-acoes">
+                <button id="editar-dados" class="botao primario">✏️ Editar informações</button>
+                <button id="exportar-dados" class="botao secundario">Exportar currículo</button>
+                <button id="importar-dados" class="botao terceiro">Importar dados</button>
+                <input id="import-file" type="file" accept=".json" hidden />
+              </div>
+            </div>
+            <div class="sobre-cards">
+              <article class="info-card glass">
+                <strong id="info-cidade">Juiz de Fora - MG</strong>
+                <small>Localização</small>
+              </article>
+              <article class="info-card glass">
+                <strong id="info-curso">Desenvolvimento de Sistemas – Proz Educação</strong>
+                <small>Formação</small>
+              </article>
+              <article class="info-card glass">
+                <strong id="info-objetivo">Primeira oportunidade em tecnologia</strong>
+                <small>Objetivo</small>
+              </article>
+              <article class="info-card glass">
+                <strong>Gestão Industrial</strong>
+                <small>Formação concluída</small>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="estatisticas" class="secao fundo-alternativo">
+        <div class="container reveal">
+          <div class="titulo-central">
+            <p class="rotulo">IMPACTO</p>
+            <h2>Estatísticas animadas</h2>
+            <p class="subtitulo">Resultados visíveis da minha prática diária.</p>
+          </div>
+          <div class="estatisticas-grid">
+            <article class="estatistica-card glass">
+              <strong data-contar="12">0</strong>
+              <span>Projetos</span>
+            </article>
+            <article class="estatistica-card glass">
+              <strong data-contar="8">0</strong>
+              <span>Cursos</span>
+            </article>
+            <article class="estatistica-card glass">
+              <strong data-contar="420">0</strong>
+              <span>Horas de estudo</span>
+            </article>
+            <article class="estatistica-card glass">
+              <strong data-contar="6">0</strong>
+              <span>Tecnologias</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="secao">
+        <div class="container reveal">
+          <div class="titulo-central">
+            <p class="rotulo">TECNOLOGIAS</p>
+            <h2>Habilidades técnicas</h2>
+            <p class="subtitulo">Ferramentas e linguagens que uso em projetos reais.</p>
+          </div>
+          <div class="tecnologias-grid">
+            <article class="tecnologia-card glass">
+              <div class="tecnologia-icone html5" aria-hidden="true"></div>
+              <h3>HTML5</h3>
+            </article>
+            <article class="tecnologia-card glass">
+              <div class="tecnologia-icone css3" aria-hidden="true"></div>
+              <h3>CSS3</h3>
+            </article>
+            <article class="tecnologia-card glass">
+              <div class="tecnologia-icone js" aria-hidden="true"></div>
+              <h3>JavaScript</h3>
+            </article>
+            <article class="tecnologia-card glass">
+              <div class="tecnologia-icone python" aria-hidden="true"></div>
+              <h3>Python</h3>
+            </article>
+            <article class="tecnologia-card glass">
+              <div class="tecnologia-icone git" aria-hidden="true"></div>
+              <h3>Git</h3>
+            </article>
+            <article class="tecnologia-card glass">
+              <div class="tecnologia-icone github" aria-hidden="true"></div>
+              <h3>GitHub</h3>
+            </article>
+          </div>
+          <div class="habilidades-conteudo">
+            <div class="filtros" id="filtros-habilidades">
+              <button class="ativo" data-filtro="todas">Todas</button>
+              <button data-filtro="tecnologia">Tecnologia</button>
+              <button data-filtro="pessoal">Pessoal</button>
+            </div>
+            <div id="lista-habilidades" class="habilidades-grid"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="trajetoria" class="secao fundo-alternativo">
+        <div class="container reveal">
+          <div class="titulo-central">
+            <p class="rotulo">JORNADA</p>
+            <h2>Linha do tempo</h2>
+            <p class="subtitulo">Minha evolução profissional até o momento.</p>
+          </div>
+          <div id="linha-do-tempo" class="linha-do-tempo"></div>
+          <form id="form-trajetoria" class="form-trajetoria glass">
+            <h3>Adicionar conquista</h3>
+            <div class="form-grid">
+              <label>Período<input name="periodo" placeholder="Ano ou período" required /></label>
+              <label>Título<input name="titulo" placeholder="Título" required /></label>
+              <label>Descrição<textarea name="descricao" placeholder="Descrição" rows="3" required></textarea></label>
+            </div>
+            <button class="botao primario" type="submit">+ Adicionar</button>
+          </form>
+        </div>
+      </section>
+
+      <section id="projetos" class="secao">
+        <div class="container reveal">
+          <div class="titulo-central">
+            <p class="rotulo">PORTFÓLIO</p>
+            <h2>Projetos desenvolvidos</h2>
+            <p class="subtitulo">Cada projeto foi pensado para demonstrar experiência e aprendizado.</p>
+          </div>
+          <div class="filtros" id="filtros-projetos">
+            <button class="ativo" data-filtro="todos">Todos</button>
+            <button data-filtro="HTML">HTML</button>
+            <button data-filtro="CSS">CSS</button>
+            <button data-filtro="JavaScript">JavaScript</button>
+          </div>
+          <div id="lista-projetos" class="projetos-grid"></div>
+        </div>
+      </section>
+
+      <section id="certificados" class="secao fundo-alternativo">
+        <div class="container reveal">
+          <div class="titulo-central">
+            <p class="rotulo">CONQUISTAS</p>
+            <h2>Certificados</h2>
+            <p class="subtitulo">Cursos e certificações que mostram o meu desenvolvimento.</p>
+          </div>
+          <div id="lista-certificados" class="certificados-grid"></div>
+        </div>
+      </section>
+
+      <section class="secao">
+        <div class="container reveal">
+          <div class="titulo-central">
+            <p class="rotulo">AGORA</p>
+            <h2>Atualmente estudando</h2>
+            <p class="subtitulo">Temas e tecnologias que recebo com foco imediato.</p>
+          </div>
+          <div id="lista-estudos" class="atualmente-grid"></div>
+        </div>
+      </section>
+
+      <section class="secao fundo-alternativo">
+        <div class="container reveal">
+          <div class="titulo-central">
+            <p class="rotulo">METAS</p>
+            <h2>Objetivos profissionais</h2>
+            <p class="subtitulo">O que estou construindo para os próximos meses.</p>
+          </div>
+          <div id="lista-objetivos" class="objetivos-grid"></div>
+        </div>
+      </section>
+
+      <section id="contato" class="secao">
+        <div class="container reveal">
+          <div class="titulo-central">
+            <p class="rotulo">CONTATO</p>
+            <h2>Vamos conversar</h2>
+            <p class="subtitulo">Estou disponível para estágio, projetos e vagas de TI.</p>
+          </div>
+          <div class="contato-grid">
+            <div class="contato-info glass">
+              <h3>Pronto para novas oportunidades</h3>
+              <p>Entre em contato por e-mail, WhatsApp ou LinkedIn e vamos conversar sobre a sua ideia.</p>
+              <div class="contato-dados">
+                <p>✉️ <a href="mailto:thiagocorreia@example.com">thiagocorreia@example.com</a></p>
+                <p>📱 <a href="https://wa.me/5511999999999" target="_blank" rel="noopener">(11) 99999-9999</a></p>
+                <p>📍 <span id="contato-cidade">Juiz de Fora - MG</span></p>
+                <p><a href="https://github.com/" target="_blank" rel="noopener">GitHub ↗</a> · <a href="https://linkedin.com/" target="_blank" rel="noopener">LinkedIn ↗</a></p>
+              </div>
+            </div>
+            <form id="form-contato" class="contato-form glass" novalidate>
+              <label>Nome<input name="nome" placeholder="Seu nome" required /></label>
+              <label>E-mail<input name="email" type="email" placeholder="Seu e-mail" required /></label>
+              <label>Assunto<input name="assunto" placeholder="Assunto" required /></label>
+              <label>Mensagem<textarea name="mensagem" rows="5" placeholder="Escreva sua mensagem" required></textarea></label>
+              <button class="botao primario" type="submit">Enviar mensagem</button>
+              <p id="mensagem-form" class="mensagem-form" role="status"></p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="rodape">
+      <div class="container rodape-grid">
+        <div>
+          <strong id="nome-rodape">Thiago Correia</strong>
+          <p>© <span id="ano-atual"></span> · Feito com HTML, CSS e JavaScript puro.</p>
+        </div>
+        <div class="rodape-links">
+          <a href="#inicio">Início</a>
+          <a href="#projetos">Projetos</a>
+          <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://wa.me/5511999999999" target="_blank" rel="noopener">WhatsApp</a>
+          <a href="mailto:thiagocorreia@example.com">E-mail</a>
+        </div>
+      </div>
+    </footer>
+
+    <button id="voltar-topo" class="voltar-topo" aria-label="Voltar ao topo">↑</button>
+
+    <div id="toast-container" class="toast-container" aria-live="polite" aria-atomic="true"></div>
+
+    <div id="modal-dados" class="modal" aria-hidden="true">
+      <div class="modal-conteudo glass">
+        <button class="fechar-modal" aria-label="Fechar">×</button>
+        <h2>Editar informações</h2>
+        <form id="form-dados">
+          <label>Nome<input name="nome" required /></label>
+          <label>Cargo<input name="cargo" required /></label>
+          <label>Cidade<input name="cidade" required /></label>
+          <label>Curso<input name="curso" required /></label>
+          <label>Objetivo<input name="objetivo" required /></label>
+          <label>Descrição<textarea name="descricao" rows="4" required></textarea></label>
+          <button class="botao primario" type="submit">Salvar alterações</button>
+        </form>
+      </div>
+    </div>
+
+    <div id="modal-projeto" class="modal" aria-hidden="true">
+      <div class="modal-conteudo glass">
+        <button class="fechar-modal" aria-label="Fechar">×</button>
+        <div id="detalhes-projeto"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
